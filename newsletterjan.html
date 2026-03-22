@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & DS Department Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e3a8a; /* Deep Navy */
+            --accent-color: #ea580c; /* Tech Orange */
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg-color); 
+            color: var(--text-dark); 
+            line-height: 1.7; 
+            padding: 20px;
+        }
+
+        .newsletter-container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            background: var(--card-bg); 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* --- Masthead --- */
+        .masthead { 
+            background: var(--primary-color); 
+            color: white;
+            padding: 50px 40px; 
+            text-align: center; 
+            border-bottom: 5px solid var(--accent-color);
+        }
+        .masthead-logo { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 56px; 
+            font-weight: 900; 
+            letter-spacing: 1px; 
+            margin-bottom: 10px; 
+            line-height: 1.1;
+        }
+        .masthead-tagline { 
+            font-size: 18px; 
+            font-weight: 300; 
+            color: #cbd5e1;
+            margin-bottom: 15px; 
+            letter-spacing: 1px;
+        }
+        .masthead-info { 
+            font-size: 13px; 
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+        }
+
+        /* --- Main Content Area --- */
+        .content { padding: 50px; }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            margin-top: 40px;
+        }
+        .section-title span { color: var(--accent-color); }
+
+        .body-text { font-size: 15px; color: var(--text-muted); margin-bottom: 16px; text-align: justify; }
+
+        /* --- Image Placeholders --- */
+        .image-placeholder {
+            background: #e2e8f0;
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 2px dashed #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .image-placeholder.small {
+            height: 200px;
+        }
+
+        /* --- Grids & Layouts --- */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        
+        /* --- Cards --- */
+        .card {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        /* --- Lists --- */
+        .custom-list { list-style: none; margin-bottom: 15px;}
+        .custom-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+        .custom-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* --- Footer --- */
+        .footer { 
+            background: var(--text-dark); 
+            color: #94a3b8; 
+            padding: 40px 50px; 
+            font-size: 14px;
+            text-align: center;
+        }
+        .footer-bottom { padding-top: 20px; border-top: 1px solid #334155; margin-top: 20px; font-size: 12px; }
+
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .content { padding: 30px 20px; }
+            .masthead-logo { font-size: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="newsletter-container">
+        <header class="masthead">
+            <div class="masthead-logo">INTELLIVERSE</div>
+            <div class="masthead-tagline">Department of Artificial Intelligence & Data Science</div>
+            <div class="masthead-info">Volume 04 • January - March 2026</div>
+        </header>
+
+        <main class="content">
+            
+            <section>
+                <h2 class="section-title">Sangram 2026 — <span>Triumph of Strength and Spirit</span></h2>
+                <div class="image-placeholder">[ Insert Sangram 2026 Group Photo / Sports Action Shot Here ]</div>
+                <div class="grid-2">
+                    <div>
+                        <p class="body-text">
+                            Sangram 2026, the annual sports extravaganza of the college, was conducted from 6th January to 16th January 2026, bringing together energy, determination, and competitive spirit. Students from the Department of Artificial Intelligence and Data Science delivered a phenomenal performance across multiple sporting events. Their dedication, teamwork, and resilience reflected the true essence of sportsmanship and brought immense pride to the department. The enthusiastic participation and remarkable victories showcased not only physical excellence but also unity and perseverance.
+                        </p>
+                        <p class="body-text">The detailed list of winners is presented below.</p>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <h3 class="card-title">🏆 Department Winners Board</h3>
+                            <ul class="custom-list">
+                                <li><strong>Girls runner up:</strong> Kho kho, Dodge ball, Box cricket</li>
+                                <li><strong>Boys runner up:</strong> Kho kho</li>
+                                <li><strong>Girls winner:</strong> Throw ball</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">TechFest Enlightenment 2026 — <span>Igniting Innovation</span></h2>
+                <div class="grid-2">
+                    <div>
+                        <p class="body-text">
+                            At TechFest Enlightenment 2026, students of the Department of Artificial Intelligence and Data Science demonstrated outstanding technical enthusiasm and creativity. The department witnessed active participation across a variety of technical competitions, workshops, and innovation-driven events. Students showcased their problem-solving abilities, technical expertise, and forward-thinking mindset, reinforcing the department’s growing presence in the technological domain.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="image-placeholder small">[ Insert TechFest Photo Here ]</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Ignite 2026 — <span>A Celebration Beyond Time</span></h2>
+                <div class="image-placeholder">[ Insert Ignite 2026 Cultural Event Photo Here ]</div>
+                <p class="body-text">
+                    Ignite 2026, the grand cultural fest of the college, revolved around the captivating theme “Paradox of Time.” Students from the Department of Artificial Intelligence and Data Science embraced the theme with passion and creativity, delivering vibrant performances across numerous cultural platforms. From mesmerizing musical performances and electrifying band shows to graceful dance acts and glamorous fashion displays, the department left a lasting impression on the audience. Their artistic expression, confidence, and stage presence beautifully highlighted the cultural diversity and talent within the department.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Hackathon <span>Spotlight</span></h2>
+                <div class="image-placeholder">[ Insert Photo of Hackathon Winners / Project Demo Here ]</div>
+                <div class="grid-2">
+                    <div class="card" style="border-top: 4px solid var(--accent-color);">
+                        <p class="body-text">
+                            A Third-Year student from the Department of Artificial Intelligence and Data Science showcased exceptional innovation and technical excellence by participating in a prestigious hackathon competition. Demonstrating strong problem-solving skills and creativity under pressure, he secured a notable achievement, bringing recognition to the department.
+                        </p>
+                        <ul class="custom-list">
+                            <li><strong>Name:</strong> __________________ (Third Year Student Name)</li>
+                            <li><strong>Achievement/Details:</strong> __________________ (Hackathon name, position secured, project details, etc.)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="border-top: 4px solid var(--primary-color);">
+                        <p class="body-text">
+                            Two Second-Year students from the Department of Artificial Intelligence and Data Science participated in a competitive hackathon and achieved a commendable rank. Their success at an early stage of their academic journey highlights the department’s strong technical foundation and the students’ enthusiasm for innovation and collaborative problem-solving.
+                        </p>
+                        <ul class="custom-list">
+                            <li><strong>Name 1:</strong> __________________ (Second Year Student Name)</li>
+                            <li><strong>Name 2:</strong> __________________ (Second Year Student Name)</li>
+                            <li><strong>Achievement/Details:</strong> __________________ (Hackathon name, rank secured, project description, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Industrial Visit — <span>Learning Beyond the Classroom</span></h2>
+                <div class="image-placeholder">[ Insert Photo of Students at Jio Reliance Corporate Park Here ]</div>
+                <p class="body-text">
+                    To bridge the gap between academic learning and real-world industry exposure, students of the Department of Artificial Intelligence and Data Science participated in industrial visits to Jio Reliance Corporate Park, Ghansoli, Navi Mumbai.
+                </p>
+                <p class="body-text">
+                    On 5th February 2026, Third-Year students visited the campus as part of an educational industrial tour. During the visit, students gained valuable insights into emerging technologies, large-scale data storage systems, and modern industry practices. They learned how data is managed, processed, and secured in real-world applications, along with exposure to cutting-edge technological developments shaping the digital ecosystem. The visit proved to be an informative and enriching experience for all participants.
+                </p>
+                <p class="body-text">
+                    On 6th February 2026, Second-Year students also visited Jio Reliance Corporate Park, Ghansoli, Navi Mumbai for an industrial visit aimed at enhancing their practical understanding of industry operations and technological infrastructure. The visit provided exposure to professional environments and contemporary technological practices.<br>
+                    <em>(Collect additional details from any Second-Year student regarding activities conducted, sessions attended, and key learning outcomes.)</em>
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Research Seminar — <span>From Ideas to Impact (11 February 2026)</span></h2>
+                <div class="grid-2">
+                    <div>
+                        <p class="body-text">
+                            On 11th February 2026, the Research and Development Cell of the Department of Artificial Intelligence and Data Science organized an insightful seminar focusing on research paper writing, publication procedures, and patent filing processes. The session provided valuable guidance on transforming innovative ideas into recognized research contributions. Participants gained practical knowledge about academic writing standards, publication ethics, intellectual property rights, and the pathway from research to real-world impact. The seminar proved highly beneficial for students aspiring to pursue research and innovation.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="image-placeholder small">[ Insert Research Seminar Speaker/Audience Photo Here ]</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title" style="text-align: center;">Academic Excellence — <span>Semester III & Semester V Rank Holders</span></h2>
+                <div class="image-placeholder">[ Insert Group Photo of Rank Holders or Department Logo Here ]</div>
+                <p class="body-text" style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">
+                    The Department of Artificial Intelligence and Data Science takes immense pride in recognizing the outstanding academic achievements of its students. The toppers of Semester III (Second Year) and Semester V (Third Year) have demonstrated exceptional dedication, perseverance, and commitment to excellence. Their remarkable performance reflects not only individual brilliance but also the strong academic environment fostered by the department. These achievers serve as role models, inspiring their peers to strive for higher standards of learning and success.
+                </p>
+                
+                <div class="grid-2">
+                    <div class="card" style="background: #fff8f1; border-color: #fed7aa;">
+                        <h3 class="card-title" style="text-align: center;">Semester III Rank Holders (Second Year)</h3>
+                        <ul class="custom-list">
+                            <li><strong>First Rank:</strong> __________________</li>
+                            <li><strong>Second Rank:</strong> __________________</li>
+                            <li><strong>Third Rank:</strong> __________________</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="background: #f0fdf4; border-color: #bbf7d0;">
+                        <h3 class="card-title" style="text-align: center;">Semester V Rank Holders (Third Year)</h3>
+                        <ul class="custom-list">
+                            <li><strong>First Rank:</strong> __________________</li>
+                            <li><strong>Second Rank:</strong> __________________</li>
+                            <li><strong>Third Rank:</strong> __________________</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-bottom">
+                © 2026 Smt. Indira Gandhi College of Engineering | AI & DS Department. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
